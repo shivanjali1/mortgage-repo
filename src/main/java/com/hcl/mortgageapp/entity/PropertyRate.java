@@ -19,7 +19,7 @@ public class PropertyRate {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
-	@Column(name = "pinCode", nullable = false)
+	@Column(name = "pinCode", nullable = false, unique = true)
 	private String pinCode;
 
 	@Column(name = "sq_ft_area_rate", nullable = false)

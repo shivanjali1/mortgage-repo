@@ -7,8 +7,6 @@ import java.time.LocalDate;
  */
 public class UserRequest {
 
-	private Long id;
-
 	private String username;
 
 	private String phoneNumber;
@@ -28,14 +26,6 @@ public class UserRequest {
 	private String propertyPinCode;
 
 	private Double propertyAreaSize;
-
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
 
 	public String getUsername() {
 		return username;
@@ -119,7 +109,7 @@ public class UserRequest {
 
 	@Override
 	public String toString() {
-		return "UserRequest [id=" + id + ", username=" + username + ", phoneNumber=" + phoneNumber + ", dob=" + dob
+		return "UserRequest [username=" + username + ", phoneNumber=" + phoneNumber + ", dob=" + dob
 				+ ", gender=" + gender + ", pan=" + pan + ", monthlySalary=" + monthlySalary + ", propertyType="
 				+ propertyType + ", propertyAddr=" + propertyAddr + ", propertyPinCode=" + propertyPinCode
 				+ ", propertyAreaSize=" + propertyAreaSize + "]";
